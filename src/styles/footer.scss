@@ -1,0 +1,35 @@
+.footer {
+	padding: 40px 0 20px 0;
+	background-image: url('../assets/img/footer-bg.png');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.col {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	&__icons {
+		margin-left: 0;
+		a {
+			margin-right: 20px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	&__text {
+		margin-top: 30px;
+	}
+	img {
+		width: 26%;
+	}
+	p {
+		font-weight: 400;
+		font-size: 20px;
+		color: #B8B8B8;
+		letter-spacing: 0.5px;
+	}
+}
