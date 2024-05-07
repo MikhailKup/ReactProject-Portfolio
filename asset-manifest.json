@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ReactProject-Portfolio/static/css/main.1b873a2d.css",
+    "main.css": "/ReactProject-Portfolio/static/css/main.4b1bf672.css",
     "main.js": "/ReactProject-Portfolio/static/js/main.be72de19.js",
     "static/media/color-sharp.png": "/ReactProject-Portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/ReactProject-Portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
@@ -34,11 +34,11 @@
     "static/media/vk-icon.svg": "/ReactProject-Portfolio/static/media/vk-icon.a2382ae2b14a9a7aef000829417d29d1.svg",
     "static/media/telegram-icon.svg": "/ReactProject-Portfolio/static/media/telegram-icon.f5b363ded29f41d4a0efb2650034b745.svg",
     "index.html": "/ReactProject-Portfolio/index.html",
-    "main.1b873a2d.css.map": "/ReactProject-Portfolio/static/css/main.1b873a2d.css.map",
+    "main.4b1bf672.css.map": "/ReactProject-Portfolio/static/css/main.4b1bf672.css.map",
     "main.be72de19.js.map": "/ReactProject-Portfolio/static/js/main.be72de19.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b873a2d.css",
+    "static/css/main.4b1bf672.css",
     "static/js/main.be72de19.js"
   ]
 }
