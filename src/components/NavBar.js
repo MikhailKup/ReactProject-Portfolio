@@ -21,10 +21,10 @@ export const NavBar = () => {
 	};
 
 	return (
-		<Navbar expand='lg' className={scrolled ? 'scrolled' : ''}>
+		<Navbar className={scrolled ? 'scrolled' : ''}>
 			<Container>
 				<Navbar.Collapse id='basic-navbar-nav'>
-					<Nav className='me-auto'>
+					<Nav>
 						<Nav.Link href='#home' className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
 						onClick={() => onUpdateActiveLink('home')}
 						>

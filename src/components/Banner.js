@@ -47,7 +47,7 @@ export const Banner = () => {
 						<TrackVisibility>
 						{({ isVisible }) =>
 						<div className={isVisible ? 'animate__animated animate__fadeInLeft' : ''}>
-							<span className='tagline'>Welcome to my Portfolio</span>
+							<span className='banner__tagline'>Welcome to my Portfolio</span>
 							<h1>{''} <span className='wrap'>{text}</span> </h1>
 							<p>I am a Frontend developer from Perm. Familiar with many popular and widespread web technologies and keep my knowledge up to date.</p>
 							<p>Have a year of experience in web development, from HTML and CSS to the advanced JavaScript framework React.</p>

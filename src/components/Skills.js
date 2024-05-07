@@ -15,11 +15,11 @@ export const Skills = () => {
 			items: 3
 		},
 		tablet: {
-			breakpoint: { max: 1024, min: 464 },
+			breakpoint: { max: 1024, min: 770 },
 			items: 2
 		},
 		mobile: {
-			breakpoint: { max: 464, min: 0 },
+			breakpoint: { max: 770, min: 0 },
 			items: 1
 		}
 	};
@@ -32,7 +32,11 @@ export const Skills = () => {
 						<div className="skills__box">
 							<h2 className="skills__title">Skills</h2>
 							<p className="skills__descr">The level of skills I have and my technology stack</p>
-							<Carousel responsive={responsive} infinite={true} className='skills__slider'>
+							<p className="skills__descr">&larr; Flip &rarr;</p>
+							<Carousel responsive={responsive} 
+							infinite={true}
+							removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+							className='skills__slider'>
 								<SkillsItem percent={95} skill={'HTML5'}/>
 								<SkillsItem percent={95} skill={'CSS3'}/>
 								<SkillsItem percent={90} skill={'JavaScript'}/>
