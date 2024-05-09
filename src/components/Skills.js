@@ -4,7 +4,7 @@ import { SkillsItem } from './SkillsItem';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from '../assets/img/color-sharp.png'
 
-export const Skills = () => {
+export const Skills = ({language}) => {
 	const responsive = {
 		superLargeDesktop: {
 			breakpoint: { max: 4000, min: 3000 },
@@ -30,9 +30,9 @@ export const Skills = () => {
 				<Row>
 					<Col>
 						<div className="skills__box">
-							<h2 className="skills__title">Skills</h2>
-							<p className="skills__descr">The level of skills I have and my technology stack</p>
-							<p className="skills__descr">&larr; Flip &rarr;</p>
+							<h2 className="skills__title">{language.skills.title}</h2>
+							<p className="skills__descr">{language.skills.descr1}</p>
+							<p className="skills__descr">&larr; {language.skills.descr2} &rarr;</p>
 							<Carousel responsive={responsive} 
 							infinite={true}
 							removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}

@@ -5,10 +5,10 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import headerImg from '../assets/img/header-img_2.svg'
 
-export const Banner = () => {
+export const Banner = ({language}) => {
 	const [loopNum, setLoopNum] = useState(0);
 	const [isDeleting, setIsDeleting] = useState(false);
-	const toRotate = ['React Developer', 'JS/TS Developer', 'Web Developer'];
+	const toRotate = language.banner.rotate;
 	const [text, setText] = useState('');
 	const [delta, setDelta] = useState(300 - Math.random() * 100);
 	const period = 2000;
@@ -47,12 +47,12 @@ export const Banner = () => {
 						<TrackVisibility>
 						{({ isVisible }) =>
 						<div className={isVisible ? 'animate__animated animate__fadeInLeft' : ''}>
-							<span className='banner__tagline'>Welcome to my Portfolio</span>
+							<span className='banner__tagline'>{language.banner.tagline}</span>
 							<h1>{''} <span className='wrap'>{text}</span> </h1>
-							<p>I am a Frontend developer from Perm. Familiar with many popular and widespread web technologies and keep my knowledge up to date.</p>
-							<p>Have a year of experience in web development, from HTML and CSS to the advanced JavaScript framework React.</p>
-							<p>I want to continue to develop in this area and acquire new skills to become a professional in my field.</p>
-							<a href='#connect'>Let's connect<ArrowRightCircle size={25}/></a>
+							<p>{language.banner.parag1}</p>
+							<p>{language.banner.parag2}</p>
+							<p>{language.banner.parag3}</p>
+							<a href='#connect'>{language.banner.connect}<ArrowRightCircle size={25}/></a>
 						</div>
 						}
 						</TrackVisibility>

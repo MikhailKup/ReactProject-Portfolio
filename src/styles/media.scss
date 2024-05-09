@@ -15,6 +15,44 @@
 	.navbar-nav {
 		margin: 0 auto;
 	}
+	.navbar__language {
+		margin-right: 15px;
+		button {
+			padding: 8px;
+			font-size: 16px;
+		}
+	}
+}
+@media (max-width: 768px){
+	.navbar {
+		.container {
+			display: flex;
+			flex-direction: column;
+			a {
+				font-size: 14px;
+			}
+		}
+	}
+	.navbar__language {
+		margin: 0 0 25px 0;
+		button {
+			padding: 8px;
+			font-size: 12px;
+		}
+	}
+	nav.navbar .navbar-nav .nav-link.navbar-link {
+		font-size: 14px;
+	}
+}
+@media (max-width: 400px){
+	.navbar__language {
+		button {
+			font-size: 10px;
+		}
+	}
+	nav.navbar .navbar-nav .nav-link.navbar-link {
+		font-size: 10px;
+	}
 }
 
 
@@ -50,6 +88,7 @@
 }
 @media (max-width: 768px){
 	.banner {
+		margin-top: 60px;
 		display: flex;
 		text-align: center;
 		background-position: top right;

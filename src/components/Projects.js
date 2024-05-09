@@ -1,13 +1,22 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { uniqueId } from 'lodash'; 
 import { ProjectCard } from "./ProjectCard";
+import { russianLocales } from '../locales/rus';
+import { rusReactProjects } from '../data/rusReactProjects';
 import { reactProjects } from '../data/reactProjects';
+import { rusJSProjects } from '../data/rusJSProjects';
 import { jsProjects } from '../data/jsProjects';
+import { rusHtmlCssProjects } from '../data/rusHtmlCssProjects';
 import { htmlCssProjects } from '../data/htmlCssProjects';
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
-export const Projects = () => {
+export const Projects = ({language}) => {
+
+	const reactArr = (language === russianLocales) ? rusReactProjects : reactProjects;
+	const jsArr = (language === russianLocales) ? rusJSProjects : jsProjects;
+	const htmlCssArr = (language === russianLocales) ? rusHtmlCssProjects : htmlCssProjects;
+
   const mapping = (project) => {
     return (
       <ProjectCard
@@ -21,39 +30,39 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
-						<h2>Projects</h2>
-						<p>Here are the projects I have made</p>
+						<h2>{language.projects.title}</h2>
+						<p>{language.projects.descr}</p>
 						<Tab.Container id="projects-tabs" defaultActiveKey="first">
 							<Nav variant="pills" className="projects__nav mb-5 justify-content-center align-items-center" id="pills-tab">
 								<Nav.Item>
-									<Nav.Link eventKey="first">React projects</Nav.Link>
+									<Nav.Link eventKey="first">{language.projects.pills.first}</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link eventKey="second">JavaScript projects</Nav.Link>
+									<Nav.Link eventKey="second">{language.projects.pills.second}</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link eventKey="third">HTML/CSS projects</Nav.Link>
+									<Nav.Link eventKey="third">{language.projects.pills.third}</Nav.Link>
 								</Nav.Item>
 							</Nav>
 							<Tab.Content>
 								<Tab.Pane eventKey="first">
 									<Row>
 										{
-											reactProjects.map((project) => mapping(project))
+											reactArr.map((project) => mapping(project))
 										}
 									</Row>
 								</Tab.Pane>
 								<Tab.Pane eventKey="second">
                 <Row>
 										{
-											jsProjects.map((project) => mapping(project))
+											jsArr.map((project) => mapping(project))
 										}
 									</Row>
 								</Tab.Pane>
 								<Tab.Pane eventKey="third">
                   <Row>
 										{
-											htmlCssProjects.map((project) => mapping(project))
+											htmlCssArr.map((project) => mapping(project))
 										}
 									</Row>
 								</Tab.Pane>

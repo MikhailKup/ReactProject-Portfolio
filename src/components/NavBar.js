@@ -4,7 +4,7 @@ import navIcon1 from '../assets/img/github-icon.svg'
 import navIcon2 from '../assets/img/telegram-icon.svg'
 import navIcon3 from '../assets/img/vk-icon.svg'
 
-export const NavBar = () => {
+export const NavBar = ({language, handleLanguage}) => {
 	const [activeLink, setActiveLink] = useState('home')
 	const [scrolled, setScrolled] = useState(false)
 
@@ -20,25 +20,43 @@ export const NavBar = () => {
 		setActiveLink(link)
 	};
 
+	const setActive = (e) => {
+		const langBtns = document.querySelectorAll('.navbar__language button');
+		langBtns.forEach((btn) => {
+			btn.classList.remove('active');
+		});
+		e.target.classList.add('active');
+	};
+
 	return (
 		<Navbar className={scrolled ? 'scrolled' : ''}>
 			<Container>
+				<div className="navbar__language">
+					<button className="russian active" onClick={(e) => {
+						handleLanguage();
+						setActive(e);
+					}}>Русский</button>
+					<button className="english" onClick={(e) => {
+						handleLanguage();
+						setActive(e);
+					}}>English</button>
+				</div>
 				<Navbar.Collapse id='basic-navbar-nav'>
-					<Nav>
+					<Nav className="navbar__links">
 						<Nav.Link href='#home' className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
 						onClick={() => onUpdateActiveLink('home')}
 						>
-							Home
+							{language.navBar.navBarLinks.homeLink}
 						</Nav.Link>
 						<Nav.Link href='#skills' className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
 						onClick={() => onUpdateActiveLink('skills')}
 						>
-							Skills
+							{language.navBar.navBarLinks.skillsLink}
 						</Nav.Link>
 						<Nav.Link href='#projects' className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
 						onClick={() => onUpdateActiveLink('projects')}
 						>
-							Projects
+							{language.navBar.navBarLinks.projectsLink}
 						</Nav.Link>
 					</Nav>
 					<span className='navbar__text'>
@@ -54,7 +72,7 @@ export const NavBar = () => {
 							</a>
 						</div>
 						<button className='navbar__btn'>
-							<a href="#connect">Let's connect</a>
+							<a href="#connect">{language.navBar.navBarBtn}</a>
 						</button>
 					</span>
 				</Navbar.Collapse>
