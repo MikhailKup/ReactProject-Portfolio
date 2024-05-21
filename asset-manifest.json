@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReactProject-Portfolio/static/css/main.48d9702c.css",
-    "main.js": "/ReactProject-Portfolio/static/js/main.29e6c77b.js",
+    "main.js": "/ReactProject-Portfolio/static/js/main.cfaa88dd.js",
     "static/media/color-sharp.png": "/ReactProject-Portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/ReactProject-Portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/gipsolit.png": "/ReactProject-Portfolio/static/media/gipsolit.339732005caf2b653d86.png",
@@ -27,6 +27,7 @@
     "static/media/contact-img.svg": "/ReactProject-Portfolio/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
     "static/media/quiz.png": "/ReactProject-Portfolio/static/media/quiz.996df493e5ee26c019b7.png",
     "static/media/toDo.png": "/ReactProject-Portfolio/static/media/toDo.dca8bd057852549dddb8.png",
+    "static/media/calculator.png": "/ReactProject-Portfolio/static/media/calculator.489396d61a11c53acac7.png",
     "static/media/revicons.eot": "/ReactProject-Portfolio/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/ReactProject-Portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/ReactProject-Portfolio/static/media/revicons.e8746a624ed098489406.woff",
@@ -35,10 +36,10 @@
     "static/media/telegram-icon.svg": "/ReactProject-Portfolio/static/media/telegram-icon.f5b363ded29f41d4a0efb2650034b745.svg",
     "index.html": "/ReactProject-Portfolio/index.html",
     "main.48d9702c.css.map": "/ReactProject-Portfolio/static/css/main.48d9702c.css.map",
-    "main.29e6c77b.js.map": "/ReactProject-Portfolio/static/js/main.29e6c77b.js.map"
+    "main.cfaa88dd.js.map": "/ReactProject-Portfolio/static/js/main.cfaa88dd.js.map"
   },
   "entrypoints": [
     "static/css/main.48d9702c.css",
-    "static/js/main.29e6c77b.js"
+    "static/js/main.cfaa88dd.js"
   ]
 }
