@@ -1,6 +1,6 @@
 import marvelImg from '../assets/img/projects/react/marvel.png'
 import calcImg from '../assets/img/projects/react/calculator.png'
-import projImg1 from "../assets/img/project-img1.png";
+import tuffmagImg from '../assets/img/projects/react/tuffmag.png'
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 
@@ -16,9 +16,10 @@ import projImg3 from "../assets/img/project-img3.png";
 		imgUrl: projImg3,
 	},
 	{
-		title: "Business Startup",
-		description: "Design & Development",
-		imgUrl: projImg1,
+		title: "Tuff Magazine",
+		description: "React project for an online store using API",
+		imgUrl: tuffmagImg,
+		link: 'https://mikhailkup.github.io/ReactProj-TuffMag/'
 	},
 	{
 		title: "Marvel Heroes",
